@@ -15,7 +15,7 @@ const Container = styled.View`
 
 const Text = styled.Text`
   color: #3a86e9;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: -0.3px;
 `;
