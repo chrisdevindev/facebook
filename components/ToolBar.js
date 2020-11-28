@@ -36,7 +36,6 @@ const Menu = styled.View`
   align-items: center;
   justify-content: center;
   height: 42px; 
-  background-color: #000
 `
 
 const ToolBar = () => {
