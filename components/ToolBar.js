@@ -15,7 +15,7 @@ const Row = styled.View`
 
 `
 
-function ToolBar() {
+const ToolBar = () => {
   return (
     <Container>
         <Row></Row>
