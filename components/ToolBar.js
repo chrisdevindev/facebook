@@ -30,6 +30,15 @@ const Divider = styled.View`
   background: #f0f0f0;
 `
 
+const Menu = styled.View`
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 42px; 
+  background-color: #000
+`
+
 const ToolBar = () => {
   return (
     <Container>
@@ -40,6 +49,10 @@ const ToolBar = () => {
           />
         </Row>
         <Divider/>
+
+        <Row>
+          <Menu></Menu>
+        </Row>
     </Container>
   );
 }
