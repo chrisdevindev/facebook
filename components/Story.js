@@ -35,6 +35,20 @@ const CardUser = styled.View`
   justify-content: center;
 `;
 
+const CardFooter = styled.View`
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    left: 9px;
+`
+
+const Text = styled.Text`
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+`
+
 const Story = () => {
   return (
     <Container>
@@ -48,6 +62,11 @@ const Story = () => {
           <CardUser>
             <AntDesign name="plus" size={24} color="#1777f2"/>
           </CardUser>
+          <CardFooter>
+              <Text>
+                  Adicionar story
+              </Text>
+          </CardFooter>
         </Card>
         
       </ScrollView>
