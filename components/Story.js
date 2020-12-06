@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import Avatar from "./Avatar";
 import styled from "styled-components/native";
 
 const Container = styled.View`
@@ -36,18 +37,18 @@ const CardUser = styled.View`
 `;
 
 const CardFooter = styled.View`
-    width: 100%;
-    position: absolute;
-    bottom: 12px;
-    left: 9px;
-`
+  width: 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 9px;
+`;
 
 const Text = styled.Text`
-    font-size: 13px;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-`
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+`;
 
 const Story = () => {
   return (
@@ -58,16 +59,43 @@ const Story = () => {
         style={{ paddingLeft: 11 }}
       >
         <Card>
-          <CardStory source={require("../assets/story1.jpg")} />
+          <CardStory source={require("../assets/user3.jpg")} />
           <CardUser>
-            <AntDesign name="plus" size={24} color="#1777f2"/>
+            <AntDesign name="plus" size={24} color="#1777f2" />
           </CardUser>
           <CardFooter>
-              <Text>
-                  Adicionar story
-              </Text>
+            <Text>Adicionar story</Text>
           </CardFooter>
         </Card>
+
+        <Card>
+          <CardStory source={require("../assets/story2.jpg")} />
+          <CardUser>
+            <Avatar source={require("../assets/user2.jpg")} story={true}/>
+          </CardUser>
+        </Card>
+
+        <Card>
+          <CardStory source={require("../assets/story3.jpg")} />
+          <CardUser>
+            <Avatar source={require("../assets/user5.jpg")} story={true}/>
+          </CardUser>
+        </Card>
+
+        <Card>
+          <CardStory source={require("../assets/story4.jpg")} />
+          <CardUser>
+            <Avatar source={require("../assets/user4.jpg")} story={true}/>
+          </CardUser>
+        </Card>
+
+        <Card>
+          <CardStory source={require("../assets/story1.jpg")} />
+          <CardUser>
+            <Avatar source={require("../assets/user1.jpg")} story={true}/>
+          </CardUser>
+        </Card>
+
         
       </ScrollView>
     </Container>
