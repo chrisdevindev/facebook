@@ -35,8 +35,15 @@ const User = styled.View`
     margin-right: 13px;
 `
 
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`
+
 const Users = () => {
     return (
+        <>
         <Container>
             <ScrollView 
                 horizontal 
@@ -55,10 +62,43 @@ const Users = () => {
                     <Avatar source={require('../assets/user1.jpg')}
                     online={true}
                     />
-                </User>    
+                </User>   
+                <User>
+                    <Avatar source={require('../assets/user2.jpg')}
+                    online={true}
+                    />
+                </User>   
+                <User>
+                    <Avatar source={require('../assets/user4.jpg')}
+                    online={true}
+                    />
+                </User>  
+                <User>
+                    <Avatar source={require('../assets/user5.jpg')}
+                    online={false}
+                    />
+                </User> 
+                <User>
+                    <Avatar source={require('../assets/user5.jpg')}
+                    online={false}
+                    />
+                </User> 
+                <User>
+                    <Avatar source={require('../assets/user5.jpg')}
+                    online={false}
+                    />
+                </User> 
+                <User>
+                    <Avatar source={require('../assets/user5.jpg')}
+                    online={false}
+                    />
+                </User> 
             </ScrollView>
-
         </Container>
+
+        <BottonDivider/>
+        </>
+
 
     )
 
