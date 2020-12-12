@@ -5,8 +5,7 @@ import Avatar from './Avatar'
 
 const Container = styled.View`
     flex: 1;
-    height: 100px;
-    background: orange;
+
 `
 const Header = styled.View`
     height: 50px;
@@ -25,6 +24,7 @@ const User = styled.Text`
     font-weight: bold;
     color: #222121;
 `
+
 
 const Feed = () => {
     return (
