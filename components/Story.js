@@ -73,6 +73,9 @@ const Story = () => {
           <CardUser>
             <Avatar source={require("../assets/user2.jpg")} story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text>Maríla Silva</Text>
+          </CardFooter>
         </Card>
 
         <Card>
@@ -80,6 +83,9 @@ const Story = () => {
           <CardUser>
             <Avatar source={require("../assets/user5.jpg")} story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text>Robocop </Text>
+          </CardFooter>
         </Card>
 
         <Card>
@@ -87,6 +93,9 @@ const Story = () => {
           <CardUser>
             <Avatar source={require("../assets/user4.jpg")} story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text>Annny Franky</Text>
+          </CardFooter>
         </Card>
 
         <Card>
@@ -94,6 +103,9 @@ const Story = () => {
           <CardUser>
             <Avatar source={require("../assets/user1.jpg")} story={true}/>
           </CardUser>
+          <CardFooter>
+            <Text>Lisa Simpson</Text>
+          </CardFooter>
         </Card>
 
         
