@@ -20,9 +20,13 @@ const Row = styled.View`
     flex-direction: row;
 `
 const User = styled.Text`
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: #222121;
+`
+const Time = styled.Text`
+    font-size: 12px;
+    color: #747476;
 `
 
 
@@ -37,6 +41,9 @@ const Feed = () => {
                         />
                         <View style={{paddingLeft: 10}}>
                             <User>Christian Castro</User>
+                            <Row>
+                                <Time>9m</Time>
+                            </Row>
                         </View>
                     </Row>
                 </Header>
