@@ -50,8 +50,15 @@ const Text = styled.Text`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 `;
 
+const BottonDivider = styled.View`
+  width: 100%;
+  height: 9px;
+  background: #f0f2f5;
+`
+
 const Story = () => {
   return (
+    <>
     <Container>
       <ScrollView
         horizontal
@@ -111,6 +118,9 @@ const Story = () => {
         
       </ScrollView>
     </Container>
+
+    <BottonDivider/>
+    </>
   );
 };
 
