@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import styled from "styled-components/native";
-import { Entypo } from "@expo/vector-icons";
+import { Entypo, AntDesign } from "@expo/vector-icons";
 
 import Avatar from "./Avatar";
 
@@ -31,17 +31,39 @@ const Time = styled.Text`
 `;
 
 const Post = styled.Text`
-    font-size: 12px;
-    color: #222121;
-    line-height: 16px;
-    padding: 0 11px;
-`
+  font-size: 14px;
+  color: #222121;
+  line-height: 16px;
+  padding: 0 11px;
+`;
 
 const Foto = styled.Image`
-    margin-top: 9px;
-    width: 100%;
-    height: 300px;
-`
+  margin-top: 9px;
+  width: 100%;
+  height: 300px;
+`;
+
+const Footer = styled.View`
+  padding: 0 11px;
+`;
+const FooterCount = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 9px 0;
+`;
+const IconCount = styled.View`
+  background: #1878f3;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+`;
+const TextCount = styled.Text`
+  font-size: 11px;
+  color: #424040;
+`;
 
 const Feed = () => {
   return (
@@ -63,13 +85,22 @@ const Feed = () => {
         </Header>
 
         <Post>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Ad laborum ab repellendus 
-            a et quo accusamus perspiciatis veniam 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum ab
+          repellendus a et quo accusamus perspiciatis veniam
         </Post>
-        <Foto 
-            source={require('../assets/post1.jpg')}
-        />
+        <Foto source={require("../assets/post1.jpg")} />
+
+        <Footer>
+          <FooterCount>
+            <Row>
+              <IconCount>
+                <AntDesign name="like1" size={12} color="#ffffff" />
+              </IconCount>
+              <TextCount>1254 likes</TextCount>
+            </Row>
+            <TextCount>854 comentários</TextCount>
+          </FooterCount>
+        </Footer>
       </Container>
     </>
   );
